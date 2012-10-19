@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 	var map;
 	var geo;
 	var lat,lng;
@@ -10,7 +8,7 @@
 		mapcreate();
 	}
 
-	function init() {
+	function funaokaInit() {
 		geo = new google.maps.Geocoder();
 		geo.geocode({'address':"岡山県,岡山市"},fnc);
 	}
@@ -33,4 +31,3 @@
     		map: map
   		});
 	}
-</script>
