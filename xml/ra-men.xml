@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE 情報[
+	<!ELEMENT 情報 (J)*>
+	<!ELEMENT J (TITLE,Address,PRODUCT,holiday,Business-hours)>
+	<!ELEMENT TITLE (#PCDATA)>
+	<!ELEMENT Address (#PCDATA)>
+	<!ELEMENT PRODUCT (NAME,PRICE)>
+	<!ELEMENT holiday (#PCDATA)>
+	<!ELEMENT Business-hours (#PCDATA)>
+]>
+<情報>
+	<J>
+		<TITLE>なるほど屋</TITLE>
+		<Address>岡山県 岡山市富町2-5-31</Address>
+		<PRODUCT>
+			<NAME>ラーメン</NAME>
+			<PRICE>590円</PRICE>
+		</PRODUCT>
+		<holiday>日曜日</holiday>
+		<Business-hours>11:00~20:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>元祖岡山とりそば太田</TITLE>
+		<Address>岡山県岡山市北区表町1丁目7-24</Address>
+		<PRODUCT>
+			<NAME>とり玉そば</NAME>
+			<PRICE>660円</PRICE>
+		</PRODUCT>
+		<holiday>日曜日・元旦</holiday>
+		<Business-hours>11：00~20：00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>らーめん桜</TITLE>
+		<Address>岡山県岡山市北区津島笹が瀬4-1</Address>
+		<PRODUCT>
+			<NAME>あごだし醤油ラーメン</NAME>
+			<PRICE>620円</PRICE>
+		</PRODUCT>
+		<holiday>月曜日</holiday>
+		<Business-hours>[火~土]11:30~14:30・[日]11:30~14:30,17:00~22:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>天神そば</TITLE>
+		<Address>岡山県岡山市北区天神町1-19</Address>
+		<PRODUCT>
+			<NAME>天神そば</NAME>
+			<PRICE>750円</PRICE>
+		</PRODUCT>
+		<holiday>土曜・日曜・祝日</holiday>
+		<Business-hours>10:30~14:30</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>小豆島ラーメン ひしお</TITLE>
+		<Address>岡山県岡山市北区本町2-23 </Address>
+		<PRODUCT>
+			<NAME>ひしおそば</NAME>
+			<PRICE>680円</PRICE>
+		</PRODUCT>
+		<holiday>無休</holiday>
+		<Business-hours>11:00~23:00(夜10時以降入店可)</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>ラーメン一喜</TITLE>
+		<Address>岡山県岡山市北区今7-24-31</Address>
+		<PRODUCT>
+			<NAME>チャーシューメン</NAME>
+			<PRICE>650円</PRICE>
+		</PRODUCT>
+		<holiday>日曜・祝日</holiday>
+		<Business-hours>11:00~20:00(夜10時以降入店可)</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>らぁめん 丈(だけ)</TITLE>
+		<Address>岡山県岡山市北区駅前町2-2-5</Address>
+		<PRODUCT>
+			<NAME>豚パイカらーめん</NAME>
+			<PRICE>750円</PRICE>
+		</PRODUCT>
+		<holiday>祝日</holiday>
+		<Business-hours>11:30~14:00, 18:00~翌2:00(夜10時以降入店可)</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>ダントルラーメン 岡山一番店</TITLE>
+		<Address>岡山県岡山市北区岩田町7-12 </Address>
+		<PRODUCT>
+			<NAME>ラーメン(並)</NAME>
+			<PRICE>600円</PRICE>
+		</PRODUCT>
+		<holiday>無休</holiday>
+		<Business-hours>[月~金]11:30~14:00, 17:00~23:00 [土・日・祝]11:30~15:00, 17:00~20:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>古川</TITLE>
+		<Address>岡山県岡山市北区下石井2-7-21</Address>
+		<PRODUCT>
+			<NAME>醤油そば</NAME>
+			<PRICE>750円</PRICE>
+		</PRODUCT>
+		<holiday>日曜・祝日</holiday>
+		<Business-hours>[月~金]11:40~13:40, 17:00~23:40 [土]11:40~13:40, 17:00~22:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>中国料理 洋明</TITLE>
+		<Address>岡山県岡山市北区西之町15-104 </Address>
+		<PRODUCT>
+			<NAME>坦坦麺</NAME>
+			<PRICE>700円</PRICE>
+		</PRODUCT>
+		<holiday>水曜日</holiday>
+		<Business-hours>11:30~14:00, 17:00~21:30(ランチ営業、日曜営業)</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>麺屋 匠</TITLE>
+		<Address>岡山県岡山市北区駅元町1-1 </Address>
+		<PRODUCT>
+			<NAME>たくみそば</NAME>
+			<PRICE>750円</PRICE>
+		</PRODUCT>
+		<holiday>無休</holiday>
+		<Business-hours>11:00~22:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>名代中華そば 山金 岡山店</TITLE>
+		<Address> 岡山県岡山市南区新保801-4</Address>
+		<PRODUCT>
+			<NAME>中華そば(普通)</NAME>
+			<PRICE>630円</PRICE>
+		</PRODUCT>
+		<holiday>月曜日</holiday>
+		<Business-hours>11:00~21:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>中華蕎麦 かたやま</TITLE>
+		<Address>岡山県岡山市南区古新田1225 </Address>
+		<PRODUCT>
+			<NAME>ねぎ蕎麦</NAME>
+			<PRICE>750円</PRICE>
+		</PRODUCT>
+		<holiday>水曜日</holiday>
+		<Business-hours>11:30~15:00, 18:00~21:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>やまと</TITLE>
+		<Address>岡山県岡山市北区表町1-9-7 </Address>
+		<PRODUCT>
+			<NAME>中華そば</NAME>
+			<PRICE>700円</PRICE>
+		</PRODUCT>
+		<holiday>火曜日(祝日の場合は翌日</holiday>
+		<Business-hours>11:00~15:00(15:00~16:00は麺類のみ), 16:00~19:00</Business-hours>
+	</J>
+</情報>
