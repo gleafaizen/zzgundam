@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+	<TITLE> = タイトル
+	<Address> = 住所
+	<holiday> = 休日
+	<Business-hours> = 営業時間
+ -->
 <!DOCTYPE 情報[
 	<!ELEMENT 情報 (J)*>
 	<!ELEMENT J (TITLE,Address,PRODUCT,holiday,Business-hours)>
 	<!ELEMENT TITLE (#PCDATA)>
 	<!ELEMENT Address (#PCDATA)>
 	<!ELEMENT PRODUCT (NAME,PRICE)>
+	<!ELEMENT NAME (#PCDATA)>
+	<!ELEMENT PRICE (#PCDATA)>
 	<!ELEMENT holiday (#PCDATA)>
 	<!ELEMENT Business-hours (#PCDATA)>
 ]>
@@ -161,5 +170,71 @@
 		</PRODUCT>
 		<holiday>火曜日(祝日の場合は翌日</holiday>
 		<Business-hours>11:00~15:00(15:00~16:00は麺類のみ), 16:00~19:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>名代中華そば 山金 岡山店</TITLE>
+		<Address>岡山県岡山市南区新保801-4</Address>
+		<PRODUCT>
+			<NAME>中華そば(普通)</NAME>
+			<PRICE>630円</PRICE>
+		</PRODUCT>
+		<holiday>月曜日</holiday>
+		<Business-hours>11:00～21:00</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>中華蕎麦 かたやま</TITLE>
+		<Address>岡山県岡山市南区古新田1225 </Address>
+		<PRODUCT>
+			<NAME>ねぎ蕎麦</NAME>
+			<PRICE>750円</PRICE>
+		</PRODUCT>
+		<holiday>水曜日</holiday>
+		<Business-hours>11:30～15:00, 18:00～21:00(ランチ営業, 日曜営業)</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>中華蕎麦 かたやま</TITLE>
+		<Address>岡山県岡山市北区下石井2-9-54 </Address>
+		<PRODUCT>
+			<NAME>塩ラーメン</NAME>
+			<PRICE>600円</PRICE>
+		</PRODUCT>
+		<holiday>月曜日</holiday>
+		<Business-hours>昼営業：11:00-15:00,夜営業：18:00-22:00(ランチ営業)</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>まことや.ラーメン店</TITLE>
+		<Address>岡山県岡山市北区田町1-12-7</Address>
+		<PRODUCT>
+			<NAME>まっ式きくらげ入り</NAME>
+			<PRICE>700円</PRICE>
+		</PRODUCT>
+		<holiday>日曜日</holiday>
+		<Business-hours>11:50~13:30, 19:00~26:00(os25:40)</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>麺屋 いわ田</TITLE>
+		<Address>岡山県岡山市北区表町2-3-57 </Address>
+		<PRODUCT>
+			<NAME>中華そば</NAME>
+			<PRICE>680円</PRICE>
+		</PRODUCT>
+		<holiday>不定休</holiday>
+		<Business-hours>11:00~15:00, 17:00~21:00(ランチ営業,日曜営業)</Business-hours>
+	</J>
+
+	<J>
+		<TITLE>らぁめん 緑屋</TITLE>
+		<Address>岡山県赤磐市高屋371-6 </Address>
+		<PRODUCT>
+			<NAME>ねぎらぁめん</NAME>
+			<PRICE>680円</PRICE>
+		</PRODUCT>
+		<holiday>不定休</holiday>
+		<Business-hours>11:00~22:00(ランチ営業)</Business-hours>
 	</J>
 </情報>
