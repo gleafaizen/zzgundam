@@ -1,6 +1,7 @@
 	var map;
 	var geo;
 	var lat,lng;
+	var test = 10;
 
 	function fnc(latlng, status){
 		lat=latlng[0].geometry.location.lat();
@@ -24,10 +25,24 @@
 		// Mapオブジェクトの生成
 		// getElementById("map")の"map"は、body内の<div id="map">より
 		map = new google.maps.Map(document.getElementById("map_canvas"), opts);
-
+		
+  		$.ajax({
+  			url:'../xml/Test.xml',
+  			dataType:'xml',
+  			success:function(data){
+  			    $("root",data).each(function () {  
+  			        test = 100;  
+  			    });
+  			},
+  			error:function(XMLHttpRequest, textStatus, errorThrown){
+  				alert(errorThrown);
+  			}
+  		})
+		
   		var m_latlng = new google.maps.LatLng(lat,lng);
   		var marker = new google.maps.Marker({
     		position: m_latlng,
     		map: map
   		});
+  		
 	}
