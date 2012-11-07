@@ -1,12 +1,23 @@
 	var map;
 	var geo;
 	var lat,lng;
-	var test = 10;
 
 	function fnc(latlng, status){
 		lat=latlng[0].geometry.location.lat();
 		lng=latlng[0].geometry.location.lng();
 		mapcreate();
+	}
+	
+	function fnc2(latlng, status){
+		if(status==google.maps.GeocoderStatus.OK){
+			lat=latlng.geometry.location.lat();
+			lng=latlng.geometry.location.lng();
+			//mapcreate();
+		}else{
+			if(status==google.maps.GeocoderStatus.UNKNOWN_ERROR){
+				alert("error");
+			}
+		}
 	}
 
 	function funaokaInit() {
@@ -26,23 +37,37 @@
 		// getElementById("map")の"map"は、body内の<div id="map">より
 		map = new google.maps.Map(document.getElementById("map_canvas"), opts);
 		
-  		$.ajax({
-  			url:'../xml/Test.xml',
-  			dataType:'xml',
-  			success:function(data){
-  			    $("root",data).each(function () {  
-  			        test = 100;  
-  			    });
-  			},
-  			error:function(XMLHttpRequest, textStatus, errorThrown){
-  				alert(errorThrown);
-  			}
-  		})
+		jQuery.ajax(
+                './ra-men.xml',
+                {
+                    dataType : 'xml',
+                    success : function( data ) {
+                        jQuery ( data ) . find( 'J' ) . each( function() {
+                        	//address読めてる
+                            var Address = jQuery(this).find('Address').text();
+                            
+                            //時間切れになる
+                            geo.geocode({'address':"岡山県,総社市"},fnc2);
+                            
+                    		//マーカー
+                      		var m_latlng = new google.maps.LatLng(lat,lng);
+                      		var marker = new google.maps.Marker({
+                        		position: m_latlng,
+                        		map: map
+                      		});
+                      		
+                        });
+                    },
+                    error: function( data ) {
+                    	alert("xmlファイル読み込みエラー");
+                    }
+                });
 		
+		/*//マーカー
   		var m_latlng = new google.maps.LatLng(lat,lng);
   		var marker = new google.maps.Marker({
     		position: m_latlng,
     		map: map
-  		});
+  		});*/
   		
 	}
