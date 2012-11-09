@@ -43,31 +43,25 @@
                     dataType : 'xml',
                     success : function( data ) {
                         jQuery ( data ) . find( 'J' ) . each( function() {
-                        	//address読めてる
-                            var Address = jQuery(this).find('Address').text();
-                            
-                            //時間切れになる
-                            geo.geocode({'address':"岡山県,総社市"},fnc2);
-                            
-                    		//マーカー
-                      		var m_latlng = new google.maps.LatLng(lat,lng);
-                      		var marker = new google.maps.Marker({
-                        		position: m_latlng,
-                        		map: map
-                      		});
-                      		
+                            var address = jQuery(this).find('Address').text();
+                            var geocoder = new google.maps.Geocoder();
+                                if (geocoder) {
+                                  geocoder.geocode( { 'address': address}, function(results, status) {
+                                    if (status == google.maps.GeocoderStatus.OK) {
+                                      //map.setCenter(results[0].geometry.location);
+                                      var marker = new google.maps.Marker({
+                                          map: map, 
+                                          position: results[0].geometry.location
+                                      });
+                                    } else {
+                                      alert(status);
+                                    }
+                                  });
+                                }
                         });
                     },
                     error: function( data ) {
                     	alert("xmlファイル読み込みエラー");
                     }
                 });
-		
-		/*//マーカー
-  		var m_latlng = new google.maps.LatLng(lat,lng);
-  		var marker = new google.maps.Marker({
-    		position: m_latlng,
-    		map: map
-  		});*/
-  		
 	}
