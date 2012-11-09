@@ -7,7 +7,7 @@
 		lng=latlng[0].geometry.location.lng();
 		mapcreate();
 	}
-	
+
 	function fnc2(latlng, status){
 		if(status==google.maps.GeocoderStatus.OK){
 			lat=latlng.geometry.location.lat();
@@ -36,7 +36,7 @@
 		// Mapオブジェクトの生成
 		// getElementById("map")の"map"は、body内の<div id="map">より
 		map = new google.maps.Map(document.getElementById("map_canvas"), opts);
-		
+
 		jQuery.ajax(
                 './ra-men.xml',
                 {
@@ -50,11 +50,10 @@
                                     if (status == google.maps.GeocoderStatus.OK) {
                                       //map.setCenter(results[0].geometry.location);
                                       var marker = new google.maps.Marker({
-                                          map: map, 
+                                          map: map,
                                           position: results[0].geometry.location
                                       });
                                     } else {
-                                      alert(status);
                                     }
                                   });
                                 }
