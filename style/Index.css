@@ -1,7 +1,22 @@
 h1{
-	width:150px;
-	height:5px;
-	font-size:5pt;
-	top:5px;
-	left:0px
+	width:1280px;
+	height:120px;
+	top:20px;
+	text-align:center;
+	font-size : 80px;
+}
+
+div{
+	text-align: center;
+}
+
+tr{
+	text-align:center;
+}
+
+td{
+	align:left;
+	width:1280px;
+	height:200px;
+	text-align : center;
 }
