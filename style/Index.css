@@ -31,3 +31,8 @@ p{
 body {
 	background-color: aqua;
 	}
+
+IMG{
+	top:10px;
+	left:100px;
+}
