@@ -44,16 +44,29 @@
                     success : function( data ) {
                         jQuery ( data ) . find( 'J' ) . each( function() {
                             var address = jQuery(this).find('Address').text();
+                            var info = jQuery(this).find('TITLE').text();
+                            var productName = jQuery(this).find('NAME').text();
+                            var productPrice = jQuery(this).find('PRICE').text();
+                            var day = jQuery(this).find('holiday').text();
+                            var business = jQuery(this).find('Business-hours').text();
+                    		var contentString = '<div>' + info + '</div><div>' + '</div><div>' + address + '</div><div>' + productName + '</div><div>' + productPrice + '</div><div>' + business + '</div><div>' + day + '</div>';
+                    		var infowindow = new google.maps.InfoWindow({
+                    		    content: contentString
+                    		});
                             var geocoder = new google.maps.Geocoder();
                                 if (geocoder) {
                                   geocoder.geocode( { 'address': address}, function(results, status) {
                                     if (status == google.maps.GeocoderStatus.OK) {
-                                      //map.setCenter(results[0].geometry.location);
                                       var marker = new google.maps.Marker({
-                                          map: map,
+                                    	  animation: google.maps.Animation.BOUNCE,
+                                          map: map, 
                                           position: results[0].geometry.location
                                       });
+                                      google.maps.event.addListener(marker, 'click', function() {
+                                    	  infowindow.open(map,marker);
+                                      });
                                     } else {
+                                      //alert(status);
                                     }
                                   });
                                 }
@@ -63,4 +76,5 @@
                     	alert("xmlファイル読み込みエラー");
                     }
                 });
+		
 	}
