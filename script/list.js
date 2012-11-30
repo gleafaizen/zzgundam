@@ -12,7 +12,7 @@ $(function(){
     //$('#taglist').remove();
     $(xml).find('J').each(function(){
         var title = $(this).find('TITLE').text();
-        var address = &(this).find('Address').text();
+        var address = $(this).find('Address').text();
         $('<li></li>')
            .html(title + address + "<br/>")
             .appendTo(ul);
