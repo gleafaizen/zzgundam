@@ -9,6 +9,7 @@ h1{
 
 div{
 	text-align: center;
+	position:relative; top:10px; left:150px;
 }
 
 tr{
