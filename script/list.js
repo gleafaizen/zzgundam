@@ -11,8 +11,9 @@ $(function(){
     $('.firstChild').remove();
     $(xml).find('J').each(function(){
         var title = $(this).find('TITLE').text();
+        var address = &(this).find('Address').text();
         $('<li></li>')
-           .html(title + "<br/>")
+           .html(title , address + "<br/>")
             .appendTo('ul');
        });
    }
