@@ -9,7 +9,7 @@ h1{
 
 div{
 	text-align: center;
-	position:relative; top:10px; left:150px;
+	position:relative;  left:200px;
 }
 
 tr{
@@ -36,4 +36,8 @@ body {
 IMG{
 	top:10px;
 	left:100px;
+}
+
+div id = "map_canvas"{
+	text-align : center;
 }
