@@ -15,7 +15,7 @@ $(function(){
         var address = $(this).find('Address').text();
         var picture = $(this).find('picture').text();
         $('<li></li>')
-           .html("<div>""<div class='img'>"+"<img src='../picture/" + picture + "'/>"+"</div>" +"<div class='cont'>"+ title +"</div>"+"<div>"+ address +"</div>"+"</div>"+ "<br/>")
+           .html("<div>"+"<div class='img'>"+"<img src='../picture/" + picture + "'/>"+"</div>" +"<div class='cont'>"+ title +"</div>"+"<div>"+ address +"</div>"+"</div>"+ "<br/>")
             .appendTo(ul);
        });
    }
