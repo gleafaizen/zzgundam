@@ -8,6 +8,18 @@
 		mapcreate();
 	}
 
+	function fnc2(latlng, status){
+		if(status==google.maps.GeocoderStatus.OK){
+			lat=latlng.geometry.location.lat();
+			lng=latlng.geometry.location.lng();
+			//mapcreate();
+		}else{
+			if(status==google.maps.GeocoderStatus.UNKNOWN_ERROR){
+				alert("error");
+			}
+		}
+	}
+
 	function funaokaInit() {
 		geo = new google.maps.Geocoder();
 		geo.geocode({'address':"岡山県,岡山市"},fnc);
@@ -37,14 +49,10 @@
                             var productPrice = jQuery(this).find('PRICE').text();
                             var day = jQuery(this).find('holiday').text();
                             var business = jQuery(this).find('Business-hours').text();
-                            var pic = jQuery(this).find('picture').text();
-                            
-                    		var content = '<img src=../picture/' + pic + ' width="24" height="24" alt="ra-men" />' + info + '</div><div>' + '</div><div>' + address + 
-                    			'</div><div>おすすめメニュー：' + productName + '　値段' + productPrice + '</div><div>' + business + '</div>定休日：' + day + '</div>';
+                    		var contentString = '<div>' + info + '</div><div>' + '</div><div>' + address + '</div><div>' + productName + '</div><div>' + productPrice + '</div><div>' + business + '</div><div>' + day + '</div>';
                     		var infowindow = new google.maps.InfoWindow({
-                    		    content: content
+                    		    content: contentString
                     		});
-                    		
                             var geocoder = new google.maps.Geocoder();
                                 if (geocoder) {
                                   geocoder.geocode( { 'address': address}, function(results, status) {
