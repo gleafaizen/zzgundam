@@ -13,8 +13,9 @@ $(function(){
     $(xml).find('J').each(function(){
         var title = $(this).find('TITLE').text();
         var address = $(this).find('Address').text();
+        var picture = $(this).find('picture').text();
         $('<li></li>')
-           .html(title + address + "<br/>")
+           .html("<div class='img'>"+"<img src='../picture/" + picture + "'/>"+"</div>" +"<div class='cont'>"+ title +"</div>"+"<div>"+ address +"</div>"+ "<br/>")
             .appendTo(ul);
        });
    }
