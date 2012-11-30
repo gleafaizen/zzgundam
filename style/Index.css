@@ -3,12 +3,13 @@ h1{
 	height:20px;
 	top:50px;
 	text-align:center;
-	font-size : 80px;
+	font-size : 100px;
 	background-color: lime;
 }
 
 div{
 	text-align: center;
+	position:relative; top:10px; left:150px;
 }
 
 tr{
