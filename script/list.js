@@ -13,7 +13,7 @@ $(function(){
         var title = $(this).find('TITLE').text();
         var address = &(this).find('Address').text();
         $('<li></li>')
-           .html(title , address + "<br/>")
+           .html(title + address + "<br/>")
             .appendTo('ul');
        });
    }
