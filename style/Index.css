@@ -45,4 +45,6 @@ body {
 
 div{
 	width:1200px;
+	position:relative; top:0;left:0px;
+	background-color: red;
 }
