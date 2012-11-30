@@ -19,11 +19,6 @@ td{
 	text-align : center;
 }
 
-p{
-	position:relative; top:10px; left:150px;
-
-}
-
 
 body {
 	background-color: aqua;
@@ -35,12 +30,12 @@ body {
 }
 
 .text{
-	position:relative; top:0;left:250px
+	position:fixed; top:0;left:250px
 
 }
 
 .IMG{
-	position:relative; top:0;left:0px
+	position:fixed; top:0;left:100px
 }
 
 div{
@@ -50,5 +45,5 @@ div{
 }
 
 .NARUHODO{
-	position:relative; top:0;left:300px
+	position:fixed; top:0;left:300px
 }
