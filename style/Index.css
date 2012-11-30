@@ -19,6 +19,10 @@ td{
 	text-align : center;
 }
 
+IMG{
+	height:150px;
+}
+
 
 body {
 	background-color: aqua;
@@ -30,20 +34,28 @@ body {
 }
 
 .text{
-	position:fixed; top:0;left:250px
+	position:absolute; top:0;left:250px
 
 }
 
 .IMG{
-	position:fixed; top:0;left:100px
+	position:absolute; top:0;left:100px
 }
 
-div{
+tabale div{
 	width:1200px;
-
+	height:150;
+	position:relative;top:0;
 	background-color: red;
 }
 
 .NARUHODO{
 	position:fixed; top:0;left:300px
+}
+
+.TENKA{
+	position:fixed; top:100;left:300px
+}
+.MIDORI{
+	position:fixed; top:150;left:300px
 }
