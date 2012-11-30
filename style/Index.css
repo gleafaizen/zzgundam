@@ -1,7 +1,38 @@
 h1{
-	width:150px;
-	height:5px;
-	font-size:5pt;
-	top:5px;
-	left:0px
+	width:1320px;
+	height:20px;
+	top:50px;
+	text-align:center;
+	font-size : 80px;
+	background-color: lime;
+}
+
+div{
+	text-align: center;
+}
+
+tr{
+	text-align:center;
+}
+
+td{
+	align:left;
+	width:1280px;
+	height:100px;
+	text-align : center;
+}
+
+p{
+	position:relative; top:10px; left:150px;
+
+}
+
+
+body {
+	background-color: aqua;
+	}
+
+IMG{
+	top:10px;
+	left:100px;
 }

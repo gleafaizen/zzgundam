@@ -1,9 +1,15 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 	<link rel="stylesheet" href="../style/Index.css" type="text/css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-	<TITLE>ラーメンマップ</TITLE>
+	<meta property="og:site_name" content="ラーメンマップ />
+	<meta property="og:title" content="ラーメンマップ" />
+	<meta property="og:description" content="岡山県のラーメンマップがみれるんです!" />
+	<meta property="og:image" content="../picture/i.jpg" />
+	<meta property="og:locale" content="日本語" />
+
+	<title>ラーメンマップ</title>
 </head>
 <body onload="funaokaInit()">
 	<h1>ラーメンマップ</h1>
@@ -17,42 +23,55 @@
     	<li class="firstChild">Tag list here.</li>
 	</ul>
 	<table>
-		<tr>
+		<tr id = "date1">
 			<th>
 				なるほどや
 			</th>
 		</tr>
-		<tr>
+		<tr id = "date2">
 			<td class="naruhodo">
-				<IMG src="i.jpg" WIDTH=150 HEIGHT=150><br>
-				おうおうおうおうお
-				<a style="display: inline-block;padding-left: 20px;padding-right: 2px;border: solid 1px #CAD4E7;border-radius:  target="_blank" rel="nofollow">いいね！</a>
+				<IMG src="../picture/i.jpg" WIDTH=150 HEIGHT=150><br>
+				<p>おうおうおうおうお</p>
 			</td>
 		</tr>
-		<tr>
+		<tr id = "date3">
 			<th>
 				天下一品
 			</th>
 		</tr>
-		<tr>
+		<tr id = "date4">
 			<td class="ouou">
-				<IMG src="d.jpg" WIDTH=150 HEIGHT=150><br>
-				おうおうおうおうお
-				<a style="display: inline-block;padding-left: 20px;padding-right: 2px;border: solid 1px #CAD4E7;border-radius:  target="_blank" rel="nofollow">いいね！</a>
+				<IMG src="../picture/d.jpg" WIDTH=150 HEIGHT=150>
+				<p>おうおうおうおうお</p>
 			</td>
 		</tr>
-		<tr>
+		<tr id = "date5">
 			<th>
 				おうようおう
 			</th>
 		</tr>
-		<tr>
+		<tr id = "date6">
 			<td class="ouou">
-				<IMG src="s.jpg" WIDTH=150 HEIGHT=150><br>
-				おうおうおうおうお
-				<a style="display: inline-block;padding-left: 20px;padding-right: 2px;border: solid 1px #CAD4E7;border-radius:  target="_blank" rel="nofollow">いいね！</a>
+				<IMG src="../picture/s.jpg" WIDTH=150 HEIGHT=150><br>
+				<p>おうおうおうおうお</p>
 			</td>
 		</tr>
 	</table>
+		<face>
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook-japan.com%2Fi&layout=standard&show_faces=true&width=300&action=like&colorscheme=light&height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:80px;" allowTransparency="true"></iframe>
+		</face>
+		<tweet>
+				<a href="http://twitter.com/"
+				 class="twitter-share-button"
+				 data-count="bemax"
+ 				 data-via="bemax"
+				 data-lang="ja">Tweet
+				</a>
+				<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</tweet>
+		<mixi>
+			<a href="http://mixi.jp/share.pl" class="mixi-check-button">Check</a><br />
+			<script type="text/javascript" src="http://static.mixi.jp/js/share.js"></script>
+		</mixi>
 </body>
 </html>
